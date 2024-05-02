@@ -99,9 +99,3 @@ button:active {
   max-width: 100%;
   max-height: 200px;
 }
-
-/* estilos de la vista de indicaciones  */
-.contenedorin {
-  background-color: #ffffff;
-  padding: 10px;
-}

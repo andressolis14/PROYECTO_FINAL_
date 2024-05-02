@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+}
+.contenedorin {
+  background-color: #ffffff;
+  padding: 10px;
+}
+.img_indi {
+  display: flex;
+  flex-direction: row;
+}
+.imagen_A {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.imagen_A img {
+  max-width: 100%;
+  max-height: 200px;
+}
+button {
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: red;
+  border-radius: 10px;
+}
+button:hover {
+  color: rgb(0, 0, 0);
+}
+button:active {
+  color: white;
+}
