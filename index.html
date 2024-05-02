@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SpeedXpert</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class = "contenedor">
+
+      <header class = "caja c1">
+         <p>SpeedXpert</p>
+      </header>
+
+      <article class = "caja c2"> 
+        <p><strong>SpeedXpert</strong></p>
+        <p>
+          Le damos la bienvenida a nuestro servicio de registro </br> 
+          de vehículos para su eventual venta.</br> 
+          Nos complace ofrecerle la oportunidad de listar su </br>
+          vehículo con nosotros. Le pedimos que por favor </br>
+          complete el formulario a continuación con la mayor </br>
+          precisión posible, siguiendo las instrucciones proporcionadas. </br>
+          Este proceso nos permitirá recopilar la información necesaria </br>
+          para promover eficazmente su vehículo y facilitar un proceso </br>
+          de venta fluido y transparente. Apreciamos su colaboración y </br>
+          confianza en nuestros servicios, y nos comprometemos a brindarle </br>
+          asistencia profesional en todo momento. Estamos a su disposición </br>
+          para cualquier pregunta o aclaración que pueda surgir durante </br>
+          este proceso. ¡Gracias por elegirnos como su plataforma para </br>
+          la venta de su vehículo!
+        </p>
+
+        
+        <div class="imagen_tresA">
+          <img src="https://1000marcas.net/wp-content/uploads/2021/11/Los-50-autos-mas-caros-del-mundo.png" />
+        </div>
+
+      </article>
+
+      <section class = "caja c3">
+        
+        <h3>Formulario de Registro</h3>
+
+        <main id="registroForm" class="registroForm">
+          <label>Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label>Categoria:</label>
+          <select id="categoria" name="categoria" required>
+            <option value="cupe">Cupe</option>
+            <option value="descapotable">Descapotable</option>
+            <option value="deportivo">Depotivo</option>
+            <option value="todoterreno">Todoterreno</option>
+            <option value="suv">Suv</option>
+          </select>
+
+          <label>Imagen:</label>
+          <select id="imagen" name="imagen" required>
+             <option value="" disabled selected>Seleccione una imagen</option>
+          </select>
+
+          <div id="imagenSeleccionada" class="imagen-container"></div>
+
+
+          <label>Codigo de producto:</label>
+          <input type="text" id="codigo" name="codigo" required>
+
+          <label>Precio:</label>
+          <input type="text" id="precio" name="precio" required pattern="[0-9]+" placeholder="$">
+
+          <label>Tipo de Motor:</label>
+           <div class="tipo_motor">
+            <input type="radio" id="v6" name="motor" value="V6">
+             <label for="radio">V6</label>
+
+            <input type="radio" id="v8" name="motor" value="V8">
+             <label for="radio">V8</label>
+
+            <input type="radio" id="v10" name="motor" value="V10">
+             <label for="radio">V10</label>
+
+            <input type="radio" id="v12" name="motor" value="V12">
+             <label for="radio">V12</label>
+           </div>
+
+          <label>Entrada de aire:</label>
+            <div class="entrada_aire">
+              <input type="radio" id="turbo" name="tipo_empuje" value="Turbo">
+              <label for="radio">Turbo</label>
+
+              <input type="radio" id="supercargador" name="tipo_empuje" value="Supercargador">
+              <label for="radio">Supercargador</label>
+            </div>
+
+          <label>Cuantos turbos o supercargadores:</label>
+          <input type="number" id="cuantos turbos o supercargadores" name="cuantos turbos o supercargadores">
+
+          <button class="button" onclick="validarConBoton()">Registrar producto</button>
+          <button class="button" onclick="limpiarCampos()">Limpiar Campos</button>
+          
+          </main>
+      </section>
+
+      <footer class = "caja c4">
+        <p>SpeedXpert: Tu camino hacia la velocidad experta.</p>
+      </footer>
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
