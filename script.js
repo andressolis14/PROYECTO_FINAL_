@@ -83,7 +83,6 @@ function validarCodigo(codigo) {
   if (codigo.length < 8) {
     return false;
   }
-
   // Verificar al menos una minúscula y una mayúscula
   let tieneMinuscula = false;
   let tieneMayuscula = false;
@@ -98,7 +97,6 @@ function validarCodigo(codigo) {
   if (!tieneMinuscula || !tieneMayuscula) {
     return false;
   }
-
   // Verificar al menos 2 números
   let contadorNumeros = 0;
   for (let j = 0; j < codigo.length; j++) {
@@ -119,9 +117,10 @@ function validarInput() {
 
   if (validarCodigo(codigoInput)) {
     // Si el código es
-    alert("El código es válido.");
+    alert("Todos los campos estan correctos.");
   } else {
     // Si el código no es válido
+    alert("Algun campo esta incorrecto.");
     redirecView();
   }
 }
@@ -134,17 +133,26 @@ function volverPprincipal() {
   window.location.assign("index.html");
 }
 // Seteo para pesos
-// Obtener el campo de entrada del precio
 const campoPrecio = document.getElementById("precio");
-// Agregar un event listener para el evento "input"
+
 campoPrecio.addEventListener("input", function () {
-  // Obtener el valor actual del campo de entrada
-  let valor = campoPrecio.value.trim();
-  // Verificar si el valor ya comienza con "$"
-  if (!valor.startsWith("$")) {
-    // Si no comienza con "$", agregar el símbolo de dólar al principio
-    valor = "$" + valor;
-  }
-  // Actualizar el valor del campo de entrada
-  campoPrecio.value = valor;
+  let valor = this.value.trim(); // Obtener el valor y eliminar espacios en blanco al principio y al final
+
+  // Eliminar todos los caracteres que no sean dígitos
+  valor = valor.replace(/\D/g, "");
+
+  // Agregar un punto cada tres dígitos
+  valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+  this.value = formatearPrecio(valor); // Formatear el valor y actualizar el campo de entrada
 });
+
+function formatearPrecio(valor) {
+  // Si el valor está vacío, devolver un string vacío
+  if (!valor) {
+    return "";
+  }
+
+  // Formatear el valor con el signo de dólar y los puntos de mil separadores
+  return "$" + valor;
+}
