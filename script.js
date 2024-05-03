@@ -253,6 +253,6 @@ function formatearPrecio(valor) {
     return "";
   }
 
-  // Formatear el valor con el signo de dólar y los puntos de mil separadores
+  // Formatear el valor con el signo de pesos y los puntos de mil separadores
   return "$" + valor;
 }
