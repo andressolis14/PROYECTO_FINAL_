@@ -32,14 +32,14 @@ body {
   margin: 0 auto;
 }
 
-.logo {
+.imagen_logo {
   background-color: #000000;
   order: 2;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.logo img {
+.imagen_logo img {
   max-width: 100px;
   max-height: 100px;
 }
