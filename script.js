@@ -3,7 +3,7 @@ function limpiarCampos() {
   document.getElementById("imagenSeleccionada").innerHTML = "";
 }
 
-// Array de imágenes
+// Array de imágenes que estan en el selector del label imagenes
 const imagenes = [
   {
     url: "https://autosdeprimera.com/wp-content/uploads/2022/10/audi-r8-v10-gt-rwd-a.jpg",
@@ -59,18 +59,14 @@ imagenes.forEach((imagen, index) => {
   selectImagen.appendChild(option);
 });
 
-// para mostrar la imagen seleccionada
+// para mostrar la imagen seleccionada en div imagenSeleccionada
 selectImagen.addEventListener("change", function () {
   const imagenSeleccionada = this.value;
 
   imagenSeleccionadaDiv.innerHTML = `<img src="${imagenSeleccionada}" alt="Imagen seleccionada">`;
 });
-
-function irAindicaciones() {
-  redirecView();
-}
-
-function redirecView() {
+// para redireccionar a la vista de indicaciones en caso de que los campos esten mal
+function redireccionamientoAI() {
   const root = window.location.pathname;
   const ruta = root.split("/");
   ruta.pop();
@@ -78,6 +74,30 @@ function redirecView() {
   window.location.replace(url);
 }
 
+//FUNCIONES PARA LA VALIDACION DEL FORMULARIO
+
+//para validar el nombre del producto
+function validarNombre(nombre) {
+  // Verificar si solo contiene letras
+  if (!/^[a-zA-Z\s]+$/.test(nombre)) {
+    return false;
+  }
+  return true;
+}
+
+// para validar la categoria del producto
+function validarCategoria(categoria) {
+  // Verificar si se ha seleccionado una opción válida
+  return categoria !== "";
+}
+
+//para validar que el producto tenga imagen
+function validarImagenSeleccionada(imagen) {
+  // Verificar si se ha seleccionado una imagen válida
+  return imagen !== "";
+}
+
+// para validar el codigo del producto
 function validarCodigo(codigo) {
   // Verificar longitud mínima
   if (codigo.length < 8) {
@@ -112,26 +132,106 @@ function validarCodigo(codigo) {
   return true;
 }
 
-function validarInput() {
-  const codigoInput = document.getElementById("codigo").value;
+// para validar si el input precio tiene algun caracter
+function validarPrecio(precio) {
+  // Verificar si el campo de precio está vacío o solo contiene espacios en blanco
+  return precio.trim() !== "";
+}
 
-  if (validarCodigo(codigoInput)) {
-    // Si el código es
-    alert("Todos los campos estan correctos.");
-  } else {
-    // Si el código no es válido
-    alert("Algun campo esta incorrecto o falta por llenar.");
-    redirecView();
+// para validar que tenga algun elemento seleccionado
+function validarTipoMotor(tipoMotor) {
+  // Verificar si se ha seleccionado un tipo de motor
+  return document.querySelector('input[name="motor"]:checked') !== null;
+}
+
+// para validar que tenga algun elemento seleccionado
+function validarEntradaAire(entradaAire) {
+  // Verificar si se ha seleccionado una entrada de aire
+  return document.querySelector('input[name="tipo_empuje"]:checked') !== null;
+}
+
+// para validar que el imput de cantidadTurbos tenga un contadorNumeros
+function validarCantidadTurbos(cantidadTurbos) {
+  // Verificar si se ha ingresado un número válido
+  return cantidadTurbos.trim() !== "";
+}
+
+function validarInputs() {
+  const nombreInput = document.getElementById("nombre").value;
+  const categoriaInput = document.getElementById("categoria").value;
+  const imagenInput = document.getElementById("imagen").value;
+  const codigoInput = document.getElementById("codigo").value;
+  const precioInput = document.getElementById("precio").value;
+  const tipoMotorInput = document.querySelector('input[name="motor"]:checked');
+  const entradaAireInput = document.querySelector(
+    'input[name="tipo_empuje"]:checked',
+  );
+  const cantidadTurbosInput = document.getElementById(
+    "cuantos turbos o supercargadores",
+  ).value;
+
+  if (!validarNombre(nombreInput)) {
+    alert("Por favor, ingresa un nombre válido.");
+    redireccionamientoAI();
+    return;
   }
+
+  if (!validarCategoria(categoriaInput)) {
+    alert("Por favor, selecciona una categoría.");
+    redireccionamientoAI();
+    return;
+  }
+
+  if (!validarImagenSeleccionada(imagenInput)) {
+    alert("Por favor, selecciona una imagen.");
+    redireccionamientoAI();
+    return;
+  }
+
+  if (!validarCodigo(codigoInput)) {
+    // Si el código es
+    alert("Por favor, ingresa un codigo valido.");
+    redireccionamientoAI();
+    return;
+  }
+
+  if (!validarPrecio(precioInput)) {
+    alert("Por favor, ingresa un precio válido.");
+    redireccionamientoAI();
+    return;
+  }
+
+  if (!validarTipoMotor(tipoMotorInput)) {
+    alert("Por favor, selecciona un tipo de motor.");
+    redireccionamientoAI();
+    return;
+  }
+
+  if (!validarEntradaAire(entradaAireInput)) {
+    alert("Por favor, selecciona una entrada de aire.");
+    redireccionamientoAI();
+    return;
+  }
+
+  if (!validarCantidadTurbos(cantidadTurbosInput)) {
+    alert(
+      "Por favor, ingresa una cantidad válida de turbos o supercargadores.",
+    );
+    redireccionamientoAI();
+    return;
+  }
+  // Si el registro es válido
+  alert("El registro se ha completado exitosamente.");
 }
 
 function validarConBoton() {
-  validarInput();
+  validarInputs();
 }
 
 function volverPprincipal() {
   window.location.assign("index.html");
 }
+
 // Seteo para pesos
 const campoPrecio = document.getElementById("precio");
 
