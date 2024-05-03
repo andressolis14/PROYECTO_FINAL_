@@ -120,7 +120,7 @@ function validarInput() {
     alert("Todos los campos estan correctos.");
   } else {
     // Si el código no es válido
-    alert("Algun campo esta incorrecto.");
+    alert("Algun campo esta incorrecto o falta por llenar.");
     redirecView();
   }
 }
