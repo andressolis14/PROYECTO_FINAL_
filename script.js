@@ -156,6 +156,7 @@ function validarCantidadTurbos(cantidadTurbos) {
   return cantidadTurbos.trim() !== "";
 }
 
+// esta funcion valida todas las entradas del los inputs
 function validarInputs() {
   const nombreInput = document.getElementById("nombre").value;
   const categoriaInput = document.getElementById("categoria").value;
