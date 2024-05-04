@@ -53,6 +53,7 @@
 
           <label>Categoria:</label>
           <select id="categoria" name="categoria" required>
+            <option value="" disabled selected>Seleccione una categoria</option>
             <option value="cupe">Cupe</option>
             <option value="descapotable">Descapotable</option>
             <option value="deportivo">Depotivo</option>
@@ -76,21 +77,26 @@
 
           <label>Tipo de Motor:</label>
            <div class="tipo_motor">
-            <input type="radio" id="v6" name="motor" value="V6">
-             <label for="radio">V6</label>
+            
+            <input type="radio" name="motor" id="v6"  value="V6">
+            <label for="v6">V6</label>
 
-            <input type="radio" id="v8" name="motor" value="V8">
-             <label for="radio">V8</label>
+            
+            <input type="radio" name="motor" id="v8"  value="V8">
+            <label for="v8">V8</label>
 
-            <input type="radio" id="v10" name="motor" value="V10">
-             <label for="radio">V10</label>
+            
+            <input type="radio" name="motor" id="v10"  value="V10">
+            <label for="v10">V10</label>
 
-            <input type="radio" id="v12" name="motor" value="V12">
-             <label for="radio">V12</label>
+            
+            <input type="radio" name="motor" id="v12"  value="V12">
+            <label for="v12">V12</label>
            </div>
 
           <label>Entrada de aire:</label>
             <div class="entrada_aire">
+              
               <input type="radio" id="turbo" name="tipo_empuje" value="Turbo">
               <label for="radio">Turbo</label>
 
@@ -104,7 +110,7 @@
           <button class="boton" onclick="validarConBoton()">Registrar producto</button>
           <button class="boton" onclick="limpiarCampos()">Limpiar Campos</button>
           
-          </main>
+        </main>
       </section>
 
       <footer class = "caja c4">

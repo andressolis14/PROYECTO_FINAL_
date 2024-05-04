@@ -1,6 +1,11 @@
 function limpiarCampos() {
-  document.getElementById("registroForm").reset();
+  document.getElementById("nombre").value = "";
+  document.getElementById("categoria").selectedIndex = 0;
+  document.getElementById("imagen").selectedIndex = 0;
   document.getElementById("imagenSeleccionada").innerHTML = "";
+  document.getElementById("codigo").value = "";
+  document.getElementById("precio").value = "";
+  document.getElementById("cuantos turbos o supercargadores").value = "";
 }
 
 // Array de imágenes que estan en el selector del label imagenes
@@ -65,6 +70,7 @@ selectImagen.addEventListener("change", function () {
 
   imagenSeleccionadaDiv.innerHTML = `<img src="${imagenSeleccionada}" alt="Imagen seleccionada">`;
 });
+
 // para redireccionar a la vista de indicaciones en caso de que los campos esten mal
 function redireccionamientoAI() {
   const root = window.location.pathname;
