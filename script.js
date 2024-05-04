@@ -5,6 +5,8 @@ function limpiarCampos() {
   document.getElementById("imagenSeleccionada").innerHTML = "";
   document.getElementById("codigo").value = "";
   document.getElementById("precio").value = "";
+  document.getElementById("motor").selectedIndex = 0;
+  document.getElementById("empuje").selectedIndex = 0;
   document.getElementById("cuantos turbos o supercargadores").value = "";
 }
 
@@ -147,13 +149,13 @@ function validarPrecio(precio) {
 // para validar que tenga algun elemento seleccionado
 function validarTipoMotor(tipoMotor) {
   // Verificar si se ha seleccionado un tipo de motor
-  return document.querySelector('input[name="motor"]:checked') !== null;
+  return tipoMotor !== "";
 }
 
 // para validar que tenga algun elemento seleccionado
 function validarEntradaAire(entradaAire) {
   // Verificar si se ha seleccionado una entrada de aire
-  return document.querySelector('input[name="tipo_empuje"]:checked') !== null;
+  return entradaAire !== "";
 }
 
 // para validar que el imput de cantidadTurbos tenga un contadorNumeros
@@ -169,10 +171,8 @@ function validarInputs() {
   const imagenInput = document.getElementById("imagen").value;
   const codigoInput = document.getElementById("codigo").value;
   const precioInput = document.getElementById("precio").value;
-  const tipoMotorInput = document.querySelector('input[name="motor"]:checked');
-  const entradaAireInput = document.querySelector(
-    'input[name="tipo_empuje"]:checked',
-  );
+  const tipoMotorInput = document.getElementById("motor").value;
+  const entradaAireInput = document.getElementById("empuje").value;
   const cantidadTurbosInput = document.getElementById(
     "cuantos turbos o supercargadores",
   ).value;

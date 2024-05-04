@@ -76,34 +76,21 @@
           <input type="text" id="precio" name="precio" required pattern="[0-9]+" placeholder="$">
 
           <label>Tipo de Motor:</label>
-           <div class="tipo_motor">
-            
-            <input type="radio" name="motor" id="v6"  value="V6">
-            <label for="v6">V6</label>
-
-            
-            <input type="radio" name="motor" id="v8"  value="V8">
-            <label for="v8">V8</label>
-
-            
-            <input type="radio" name="motor" id="v10"  value="V10">
-            <label for="v10">V10</label>
-
-            
-            <input type="radio" name="motor" id="v12"  value="V12">
-            <label for="v12">V12</label>
-           </div>
+          <select id="motor" name="motor" required>
+            <option value="" disabled selected>Seleccione un tipo de motor</option>
+            <option value="V6">V6</option>
+            <option value="V8">V8</option>
+            <option value="V10">V20</option>
+            <option value="V12">V12</option>  
+          </select>
 
           <label>Entrada de aire:</label>
-            <div class="entrada_aire">
-              
-              <input type="radio" id="turbo" name="tipo_empuje" value="Turbo">
-              <label for="radio">Turbo</label>
-
-              <input type="radio" id="supercargador" name="tipo_empuje" value="Supercargador">
-              <label for="radio">Supercargador</label>
-            </div>
-
+          <select id="empuje" name="empuje" required>
+            <option value="" disabled selected>Seleccione una entrada de aire</option>
+            <option value="Turbo">Turbo</option>
+            <option value="Supercargador">Supercargador</option>
+          </select>
+          
           <label>Cuantos turbos o supercargadores:</label>
           <input type="number" id="cuantos turbos o supercargadores" name="cuantos turbos o supercargadores">
 
