@@ -8,6 +8,7 @@ function limpiarCampos() {
   document.getElementById("motor").selectedIndex = 0;
   document.getElementById("empuje").selectedIndex = 0;
   document.getElementById("cuantos turbos o supercargadores").value = "";
+  alert("Campos limpios.");
 }
 
 // Array de imágenes que estan en el selector del label imagenes
