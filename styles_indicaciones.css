@@ -62,3 +62,11 @@ h2 {
 .boton:hover {
   color: rgb(255, 255, 255);
 }
+
+.foind {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  font: 100% sans-serif;
+  font-size: 20px;
+}
