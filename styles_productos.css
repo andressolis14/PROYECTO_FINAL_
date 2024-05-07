@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+.contenedorpro {
+  background-color: white;
+  text-align: center;
+}
+
+/* Estilos para las tarjetas de producto */
+.tarjeta-producto {
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: calc(
+    20% - 10px
+  ); /* Calcula el ancho para que haya 5 tarjetas por fila con margen */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.tarjeta-producto img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilos para las filas de productos */
+.contproduc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
