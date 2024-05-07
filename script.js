@@ -264,3 +264,7 @@ function formatearPrecio(valor) {
   // Formatear el valor con el signo de pesos y los puntos de mil separadores
   return "$" + valor;
 }
+/////////////////////////
+function irapro() {
+  window.location.assign("productos.html");
+}
