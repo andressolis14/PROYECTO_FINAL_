@@ -630,12 +630,12 @@ function mostrarProductos() {
     tarjetaProducto.innerHTML = `
             <img src="${producto.imagen}" alt="${producto.nombre}">
             <h2>${producto.nombre}</h2>
-            <p>Categoría: ${producto.categoria}</p>
-            <p>Código: ${producto.codigo}</p>
-            <p>Precio: $${producto.precio}</p>
-            <p>Tipo de motor: ${producto.tipo_motor}</p>
-            <p>Entrada de aire: ${producto.entrada_aire}</p>
-            <p>Cantidad: ${producto.cantidad}</p>
+            <p><strong>Categoría:</strong> ${producto.categoria}</p>
+            <p><strong>Código:</strong> ${producto.codigo}</p>
+            <p><strong>Precio:</strong> $${producto.precio}</p>
+            <p><strong>Tipo de motor:</strong> ${producto.tipo_motor}</p>
+            <p><strong>Entrada de aire:</strong> ${producto.entrada_aire}</p>
+            <p><strong>Cantidad:</strong> ${producto.cantidad}</p>
         `;
     // Agregar la tarjeta al contenedor de productos
     productosContainer.appendChild(tarjetaProducto);
