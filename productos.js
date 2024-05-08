@@ -6,7 +6,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Rolls-Royce-Ghost-768x438.png",
     codigo: "aB3cD4e5",
-    precio: "$ 315.000.000",
+    precio: " 315.000.000",
     tipo_motor: "v8",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -18,7 +18,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Ferrari-SF90-Stradale-768x384.png",
     codigo: "fG6hI7j8",
-    precio: "$ 625.000.000",
+    precio: " 625.000.000",
     tipo_motor: "v12",
     entrada_aire: "turbo",
     cantidad: 1,
@@ -30,7 +30,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/McLaren-P1-768x512.png",
     codigo: "kL9mN0oP",
-    precio: "$ 500.000.000",
+    precio: " 500.000.000",
     tipo_motor: "v8",
     entrada_aire: "supercargador",
     cantidad: 1,
@@ -42,7 +42,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Zenvo-ST1-768x407.png",
     codigo: "qR1sT2u3",
-    precio: "$ 200.000.000",
+    precio: " 200.000.000",
     tipo_motor: "v12",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -54,7 +54,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Aston-Martin-Valhalla-768x387.png",
     codigo: "vW4xY5zA",
-    precio: "$ 400.000.000",
+    precio: " 400.000.000",
     tipo_motor: "v6",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -66,7 +66,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Ferrari-LaFerrari-Aperta-768x490.png",
     codigo: "bC6dE7fG",
-    precio: "$ 140.000.000 ",
+    precio: " 140.000.000 ",
     tipo_motor: "v10",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -78,7 +78,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Aston-Martin-One-77-768x422.png",
     codigo: "hI8jK9lM",
-    precio: "$ 240.000.000",
+    precio: " 240.000.000",
     tipo_motor: "v12",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -90,7 +90,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Zenvo-TS1-GT-768x576.png",
     codigo: "nO0pQ1rS",
-    precio: "$ 300.000.000",
+    precio: " 300.000.000",
     tipo_motor: "v10",
     entrada_aire: "supercargador",
     cantidad: 2,
@@ -102,7 +102,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Rimac-C_Two-768x448.png",
     codigo: "tU2vW3xY",
-    precio: "$ 380.000.000",
+    precio: " 380.000.000",
     tipo_motor: "v8",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -114,7 +114,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Koenigsegg-One-1-768x431.png",
     codigo: "zA4bC5dE",
-    precio: "$ 200.000.000",
+    precio: " 200.000.000",
     tipo_motor: "v12",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -126,7 +126,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Lamborghini-Sesto-Elemento-768x480.png",
     codigo: "fG6hI7j8",
-    precio: "$ 400.000.000",
+    precio: " 400.000.000",
     tipo_motor: "v6",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -150,7 +150,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/McLaren-Speedtail-768x507.png",
     codigo: "qR1sT2u3",
-    precio: "$ 500.000.000",
+    precio: " 500.000.000",
     tipo_motor: "v12",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -162,7 +162,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Aston-Martin-Vulcan-768x461.png",
     codigo: "vW4xY5zA",
-    precio: "$ 300.000.000",
+    precio: " 300.000.000",
     tipo_motor: "v8",
     entrada_aire: "supercargador",
     cantidad: 2,
@@ -173,7 +173,7 @@ const productos = [
     categoria: "Deportivo",
     imagen: "https://minict.com/web/product/big/201803/3844_shop1_628876.jpg",
     codigo: "bC6dE7fG",
-    precio: "100.000.000",
+    precio: " 100.000.000",
     tipo_motor: "v6",
     entrada_aire: "supercargador",
     cantidad: 2,
@@ -185,7 +185,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Lamborghini-Countach-LPI-800-4-768x393.png",
     codigo: "hI8jK9lM",
-    precio: "$ 450.000.000",
+    precio: " 450.000.000",
     tipo_motor: "v6",
     entrada_aire: "supercargador",
     cantidad: 2,
@@ -197,7 +197,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Pagani-Huayra-BC-768x384.png",
     codigo: "nO0pQ1rS",
-    precio: "240.000.000",
+    precio: " 240.000.000",
     tipo_motor: "v12",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -209,7 +209,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Ferrari-LaFerrari-FXX-K-768x402.png",
     codigo: "tU2vW3xY",
-    precio: "$ 460.000.000",
+    precio: " 460.000.000",
     tipo_motor: "v12",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -221,7 +221,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Mercedes-AMG-One-768x342.png",
     codigo: "zA4bC5dE",
-    precio: "300.000.000",
+    precio: " 300.000.000",
     tipo_motor: "v6",
     entrada_aire: "supercargador",
     cantidad: 2,
@@ -233,7 +233,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Bugatti-Chiron-768x437.png",
     codigo: "fG6hI7j8",
-    precio: "$ 500.000.000",
+    precio: " 500.000.000",
     tipo_motor: "v8",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -245,7 +245,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Aston-Martin-Valkyrie-768x384.png",
     codigo: "kL9mN0oP",
-    precio: "$ 500.000.000 ",
+    precio: " 500.000.000 ",
     tipo_motor: "v6",
     entrada_aire: "supercargador",
     cantidad: 1,
@@ -257,7 +257,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Koenigsegg-Jesko-768x404.png",
     codigo: "qR1sT2u3",
-    precio: "$ 400.000.000",
+    precio: " 400.000.000",
     tipo_motor: "v12",
     entrada_aire: "turbo",
     cantidad: 1,
@@ -269,7 +269,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Ferrari-Pininfarina-Sergio-768x300.png",
     codigo: "vW4xY5zA",
-    precio: "$ 400.000.000",
+    precio: " 400.000.000",
     tipo_motor: "v8",
     entrada_aire: "supercargador",
     cantidad: 2,
@@ -281,7 +281,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Limited-Edition-Bugatti-Veyron-by-Mansory-Vivere-768x393.png",
     codigo: "bC6dE7fG",
-    precio: "$ 300.000.000",
+    precio: " 300.000.000",
     tipo_motor: "v12",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -293,7 +293,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/W-Motors-Lykan-Hypersport-768x421.png",
     codigo: "hI8jK9lM",
-    precio: "$ 400.000.000",
+    precio: " 400.000.000",
     tipo_motor: "v12",
     entrada_aire: "turbo",
     cantidad: 3,
@@ -305,7 +305,7 @@ const productos = [
     imagen:
       "https://www.6speedonline.com/wp-content/uploads/2015/04/2017-mclaren-p1-lm-4_1600x0w.jpg",
     codigo: "nO0pQ1rS",
-    precio: "$ 600.000.000",
+    precio: " 600.000.000",
     tipo_motor: "v10",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -317,7 +317,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Bugatti-Chiron-Pur-Sport-768x485.png",
     codigo: "tU2vW3xY",
-    precio: "$ 500.000.000",
+    precio: " 500.000.000",
     tipo_motor: "v8",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -329,7 +329,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Lamborghini-Sian-768x386.png",
     codigo: "zA4bC5dE",
-    precio: "$ 700.000.000",
+    precio: " 700.000.000",
     tipo_motor: "v12",
     entrada_aire: "supercargador",
     cantidad: 1,
@@ -341,7 +341,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Bugatti-Chiron-Super-Sport-300-768x432.png",
     codigo: "fG6hI7j8",
-    precio: "$ 600.000.000",
+    precio: " 600.000.000",
     tipo_motor: "v10",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -353,7 +353,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Lamborghini-Veneno-768x435.png",
     codigo: "kL9mN0oP",
-    precio: "$ 400.000.000",
+    precio: " 400.000.000",
     tipo_motor: "v12",
     entrada_aire: "supercargador",
     cantidad: 2,
@@ -365,7 +365,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Bugatti-Bolide-768x368.png",
     codigo: "qR1sT2u3",
-    precio: "$ 450.000.000",
+    precio: " 450.000.000",
     tipo_motor: "v6",
     entrada_aire: "turbo",
     cantidad: 1,
@@ -377,7 +377,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Koenigsegg-CCXR-Trevita-768x399.png",
     codigo: "vW4xY5zA",
-    precio: "$ 640.000.000",
+    precio: " 640.000.000",
     tipo_motor: "v8",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -389,7 +389,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Pagani-Huyara-Imola-768x393.png",
     codigo: "bC6dE7fG",
-    precio: "$ 270.000.000",
+    precio: " 270.000.000",
     tipo_motor: "v8",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -401,7 +401,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Bugatti-Divo-768x423.png",
     codigo: "hI8jK9lM",
-    precio: "$ 650.000.000",
+    precio: " 650.000.000",
     tipo_motor: "v12",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -413,7 +413,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Maybach-Exelero-768x435.png",
     codigo: "nO0pQ1rS",
-    precio: "$ 647.000.000",
+    precio: " 647.000.000",
     tipo_motor: "v10",
     entrada_aire: "supercargador",
     cantidad: 2,
@@ -425,7 +425,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Bugatti-Centodieci-768x466.png",
     codigo: "tU2vW3xY",
-    precio: "$ 340.000.000",
+    precio: " 340.000.000",
     tipo_motor: "v10",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -435,9 +435,9 @@ const productos = [
     nombre: "Bugatti La Voiture Noir",
     categoria: "Deportivo",
     imagen:
-      "https://1000marcas.net/wp-content/uploads/2021/11/Rolls-Royce-Sweptail-768x401.png",
+      "https://thumbs.dreamstime.com/b/bugatti-la-voiture-noire-sobre-el-fondo-blanco-206469241.jpg",
     codigo: "zA4bC5dE",
-    precio: "$ 430.000.000",
+    precio: " 430.000.000",
     tipo_motor: "v6",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -449,7 +449,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Rolls-Royce-Sweptail-768x401.png",
     codigo: "fG6hI7j8",
-    precio: "$ 560.000.000",
+    precio: " 560.000.000",
     tipo_motor: "v6",
     entrada_aire: "supercargador",
     cantidad: 1,
@@ -461,7 +461,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/Pagani-Zonda-HP-Barchetta-768x465.png",
     codigo: "kL9mN0oP",
-    precio: "$ 234.000.000",
+    precio: " 234.000.000",
     tipo_motor: "v8",
     entrada_aire: "supercargador",
     cantidad: 1,
@@ -473,7 +473,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/1964-Ferrari-250-LM-768x444.png",
     codigo: "qR1sT2u3",
-    precio: "$ 345.000.000",
+    precio: " 345.000.000",
     tipo_motor: "v6",
     entrada_aire: "supercargador",
     cantidad: 1,
@@ -485,7 +485,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/1994-McLaren-F1-LM-768x390.png",
     codigo: "vW4xY5zA",
-    precio: "$ 305.000.000",
+    precio: " 305.000.000",
     tipo_motor: "v6",
     entrada_aire: "turbo",
     cantidad: 2,
@@ -497,7 +497,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/1955-Jaguar-D-Type-768x480.png",
     codigo: "bC6dE7fG",
-    precio: "$ 453.000.000",
+    precio: " 453.000.000",
     tipo_motor: "v6",
     entrada_aire: "supercargador",
     cantidad: 1,
@@ -509,7 +509,7 @@ const productos = [
     imagen:
       "https://1000marcas.net/wp-content/uploads/2021/11/1935-Duesenberg-SSJ-768x465.png",
     codigo: "hI8jK9lM",
-    precio: "$ 340.000.000",
+    precio: " 340.000.000",
     tipo_motor: "v8",
     entrada_aire: "supercargador",
     cantidad: 1,
@@ -521,7 +521,7 @@ const productos = [
     imagen:
       "https://hips.hearstapps.com/hmg-prod/images/1563693-stelvio-quadrifoglio-my20-03-1588850312.jpg?crop=1xw:0.84375xh;center,top&resize=980:*",
     codigo: "nO0pQ1rS",
-    precio: "$ 400.000.000",
+    precio: " 400.000.000",
     tipo_motor: "v6",
     entrada_aire: "supercargador",
     cantidad: 1,
@@ -533,7 +533,7 @@ const productos = [
     imagen:
       "https://hips.hearstapps.com/hmg-prod/images/12c773df-2020-audi-rs-q3-1-1569482796.jpg?crop=0.791xw:0.668xh;0,0.244xh&resize=980:*",
     codigo: "tU2vW3xY",
-    precio: "$ 300.000.000",
+    precio: " 300.000.000",
     tipo_motor: "v6",
     entrada_aire: "turbo",
     cantidad: 1,
