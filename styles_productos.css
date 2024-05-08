@@ -46,7 +46,7 @@ body {
 }
 .boton {
   background-color: transparent;
-  color: #000000;
+  color: white;
   font-size: 1rem;
   padding: 5px 5px;
   position: relative;
@@ -79,4 +79,7 @@ body {
 
 .boton:hover {
   color: rgb(255, 255, 255);
+}
+.contnav {
+  padding: 20px;
 }
