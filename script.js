@@ -230,6 +230,7 @@ function validarInputs() {
   }
   // Si el registro es válido
   alert("El registro se ha completado exitosamente.");
+  iraproductos();
 }
 
 function validarConBoton() {
@@ -238,6 +239,9 @@ function validarConBoton() {
 
 function volverPprincipal() {
   window.location.assign("index.html");
+}
+function iraproductos() {
+  window.location.assign("productos.html");
 }
 
 // Seteo para pesos
@@ -265,6 +269,3 @@ function formatearPrecio(valor) {
   return "$" + valor;
 }
 /////////////////////////
-function irapro() {
-  window.location.assign("productos.html");
-}
