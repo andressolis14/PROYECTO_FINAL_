@@ -24,6 +24,10 @@ h2 {
 .imagen_A img {
   max-width: 100%;
   max-height: 200px;
+  transition: transform 1s ease;
+}
+.imagen_A img:hover {
+  transform: scale(1.5);
 }
 .boton {
   background-color: transparent;

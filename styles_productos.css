@@ -39,3 +39,8 @@ body {
 .tarjeta-producto img:hover {
   transform: scale(1.5);
 }
+.fopro {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
