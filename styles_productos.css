@@ -5,6 +5,9 @@ body {
   background-color: white;
   text-align: center;
 }
+.titulo {
+  font-size: 40px;
+}
 /* Estilos para las filas de productos */
 .contproduc {
   display: flex;
@@ -26,4 +29,13 @@ body {
   height: auto;
   display: block;
   margin-bottom: 10px;
+  transition: transform 1s ease;
+}
+
+.tarjeta-producto h2:hover {
+  color: rgb(255, 0, 0);
+}
+
+.tarjeta-producto img:hover {
+  transform: scale(1.5);
 }
