@@ -11,61 +11,10 @@ function limpiarCampos() {
   alert("Campos limpios.");
 }
 
-// Array de imágenes que estan en el selector del label imagenes
-const imagenes = [
-  {
-    url: "https://autosdeprimera.com/wp-content/uploads/2022/10/audi-r8-v10-gt-rwd-a.jpg",
-    nombre: "Imagen 1",
-  },
-  {
-    url: "https://autosdeprimera.com/wp-content/uploads/2023/02/ford-mustang-dark-horse-a.jpg",
-    nombre: "Imagen 2",
-  },
-  {
-    url: "https://hips.hearstapps.com/hmg-prod/images/2022-ford-mustang-shelby-gt500-02-1636734552.jpg",
-    nombre: "Imagen 3",
-  },
-  {
-    url: "https://acnews.blob.core.windows.net/imgnews/medium/NAZ_7d13e0578a1847c69e562ccc58c24de8.jpg",
-    nombre: "Imagen 4",
-  },
-  {
-    url: "https://www.elcarrocolombiano.com/wp-content/uploads/2021/04/Diseno-sin-titulo-4-4.jpg",
-    nombre: "Imagen 5",
-  },
-  {
-    url: "https://acnews.blob.core.windows.net/imgnews/large/NAZ_bb5451ef5d2b435983d22c6b23f333ed.webp",
-    nombre: "Imagen 6",
-  },
-  {
-    url: "https://hips.hearstapps.com/hmg-prod/images/the-fast-and-the-furious-toyota-supra-subasta-1624180933.jpg?crop=1.00xw:0.892xh;0,0.0372xh&resize=2048:*",
-    nombre: "Imagen 7",
-  },
-  {
-    url: "https://www.elcarrocolombiano.com/wp-content/uploads/2020/10/20201023-BMW-M4-COMPETITION-KITH-AA-01-750x518.jpg",
-    nombre: "Imagen 8",
-  },
-  {
-    url: "https://www.wardsauto.com/sites/wardsauto.com/files/uploads/2012/09/01mclarenp1paris2012.jpg",
-    nombre: "Imagen 9",
-  },
-  {
-    url: "https://arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/MJ6K3V5RVVC6HDDGE3LCEJWCEM.jpg",
-    nombre: "Imagen 10",
-  },
-];
-
-// Obtener el elemento select de imágenes
+// Esta línea obtiene una referencia al elemento <select> del HTML con el id "imagen" y la almacena en la variable selectImagen.
 const selectImagen = document.getElementById("imagen");
+// Aquí se obtiene una referencia al elemento <div> del HTML con el id "imagenSeleccionada" y se almacena en la variable imagenSeleccionadaDiv.
 const imagenSeleccionadaDiv = document.getElementById("imagenSeleccionada");
-
-// recorre sobre el array de imágenes y agregar opciones al select
-imagenes.forEach((imagen, index) => {
-  const option = document.createElement("option");
-  option.value = imagen.url;
-  option.text = imagen.nombre;
-  selectImagen.appendChild(option);
-});
 
 // para mostrar la imagen seleccionada en div imagenSeleccionada
 selectImagen.addEventListener("change", function () {
@@ -74,13 +23,14 @@ selectImagen.addEventListener("change", function () {
   imagenSeleccionadaDiv.innerHTML = `<img src="${imagenSeleccionada}" alt="Imagen seleccionada">`;
 });
 
-// para redireccionar a la vista de indicaciones en caso de que los campos esten mal
 function redireccionamientoAI() {
-  const root = window.location.pathname;
-  const ruta = root.split("/");
-  ruta.pop();
-  const url = ruta.join("/") + "/indicaciones.html";
-  window.location.replace(url);
+  window.location.assign("indicaciones.html");
+}
+function volverPprincipal() {
+  window.location.assign("index.html");
+}
+function iraproductos() {
+  window.location.assign("productos.html");
 }
 
 //FUNCIONES PARA LA VALIDACION DEL FORMULARIO
@@ -237,13 +187,6 @@ function validarConBoton() {
   validarInputs();
 }
 
-function volverPprincipal() {
-  window.location.assign("index.html");
-}
-function iraproductos() {
-  window.location.assign("productos.html");
-}
-
 // Seteo para pesos
 const campoPrecio = document.getElementById("precio");
 
@@ -268,4 +211,3 @@ function formatearPrecio(valor) {
   // Formatear el valor con el signo de pesos y los puntos de mil separadores
   return "$" + valor;
 }
-/////////////////////////
