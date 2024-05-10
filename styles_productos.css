@@ -89,7 +89,7 @@ body {
   transform: scale(1.2);
 }
 .botoNave {
-  width: 80%;
+  width: 72%;
 }
 .paginaActual {
   color: white;
@@ -137,5 +137,5 @@ body {
 }
 .contnav {
   padding: 20px;
-  width: 77%;
+  width: 70%;
 }
