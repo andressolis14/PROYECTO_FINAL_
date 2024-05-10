@@ -44,7 +44,8 @@ body {
 .gif-container {
   display: flex;
   margin: 10px;
-  flex-direction: column; /* Esto mueve el contenedor de GIF al lado derecho */
+  flex-direction: column;
+  justify-content: space-between; /* Esto mueve el contenedor de GIF al lado derecho */
 }
 
 /* Estilos para las filas de productos */
