@@ -1,13 +1,52 @@
 body {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 .contenedorpro {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   text-align: center;
 }
 .titulo {
-  font-size: 40px;
+  color: #ff0000;
+  font-size: 70px;
 }
+.hed {
+  position: relative; /* Establece el contexto de posición para los elementos hijos */
+  max-width: 100%;
+  /* Establece un ancho máximo para el contenedor */
+  margin: 0 auto;
+}
+
+.hed img {
+  width: 100%;
+  height: auto; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.hed p {
+  position: absolute; /* Establece la posición absoluta con respecto al contenedor */
+  top: 50%; /* Posiciona el texto en la mitad superior del contenedor */
+  left: 50%; /* Centra horizontalmente el texto */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centra vertical y horizontalmente el texto */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.132
+  ); /* Fondo semi-transparente para mejorar la legibilidad */
+  padding: 10px; /* Agrega espacio alrededor del texto */
+}
+.contenedor-gif-main {
+  display: flex;
+}
+
+.gif-container {
+  display: flex;
+  margin: 10px;
+  flex-direction: column; /* Esto mueve el contenedor de GIF al lado derecho */
+}
+
 /* Estilos para las filas de productos */
 .contproduc {
   background-color: rgb(0, 0, 0);
@@ -51,9 +90,12 @@ body {
 .botoNave {
   width: 80%;
 }
-.fopro {
-  background-color: black;
+.paginaActual {
   color: white;
+}
+.fopro {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 20px;
 }
 .boton {
