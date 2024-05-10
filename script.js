@@ -38,7 +38,7 @@ function iraproductos() {
 //para validar el nombre del producto
 function validarNombre(nombre) {
   // Verificar si solo contiene letras
-  if (!/^[a-zA-Z\s]+$/.test(nombre)) {
+  if (!/^[a-zA-Z0-9\s]+$/.test(nombre)) {
     return false;
   }
   return true;
