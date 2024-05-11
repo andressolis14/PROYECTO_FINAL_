@@ -139,3 +139,7 @@ body {
   padding: 20px;
   width: 70%;
 }
+video {
+  width: 320px; /* Cambia el ancho del video */
+  height: 180px; /* Cambia la altura del video */
+}
