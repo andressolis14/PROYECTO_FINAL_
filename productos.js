@@ -600,6 +600,40 @@ const productos = [
   },
 ];
 
+// FUNCION PARA AGREGAR PRODUCTOS
+// Definir la función para agregar el producto
+function agregarProducto() {
+  // Aquí irá tu lógica para agregar el producto al array de productos
+  // Por ejemplo:
+  console.log("entre");
+  const nombre = document.getElementById("nombre").value;
+  const categoria = document.getElementById("categoria").value;
+  const imagen = document.getElementById("imagen").value;
+  const codigo = document.getElementById("codigo").value;
+  const precio = document.getElementById("precio").value;
+  const motor = document.getElementById("motor").value;
+  const empuje = document.getElementById("empuje").value;
+  const cantidadTurbos = document.getElementById(
+    "cuantos turbos o supercargadores",
+  ).value;
+
+  // Crear un objeto con los datos del producto
+  const nuevoProducto = {
+    nombre: nombre,
+    categoria: categoria,
+    imagen: imagen,
+    codigo: codigo,
+    precio: precio,
+    motor: motor,
+    empuje: empuje,
+    cantidad: cantidadTurbos,
+  };
+
+  // Agregar el nuevo producto al array de productos
+
+  productos.push(nuevoProducto);
+}
+
 // Definimos el número de productos que queremos mostrar por página
 const productosPorPagina = 15;
 
@@ -671,35 +705,3 @@ btnPaginaSiguiente.addEventListener("click", irPaginaSiguiente);
 
 // Mostrar los productos en la primera carga de la página
 mostrarProductos();
-
-// FUNCION PARA AGREGAR PRODUCTOS
-// Definir la función para agregar el producto
-function agregarProducto() {
-  // Aquí irá tu lógica para agregar el producto al array de productos
-  // Por ejemplo:
-  const nombre = document.getElementById("nombre").value;
-  const categoria = document.getElementById("categoria").value;
-  const imagen = document.getElementById("imagen").value;
-  const codigo = document.getElementById("codigo").value;
-  const precio = document.getElementById("precio").value;
-  const motor = document.getElementById("motor").value;
-  const empuje = document.getElementById("empuje").value;
-  const cantidadTurbos = document.getElementById("cuantosTurbos").value;
-
-  // Crear un objeto con los datos del producto
-  const nuevoProducto = {
-    nombre: nombre,
-    categoria: categoria,
-    imagen: imagen,
-    codigo: codigo,
-    precio: precio,
-    motor: motor,
-    empuje: empuje,
-    cantidadTurbos: cantidadTurbos,
-  };
-
-  // Agregar el nuevo producto al array de productos
-
-  productos.push(nuevoProducto);
-  alert("se registro");
-}
