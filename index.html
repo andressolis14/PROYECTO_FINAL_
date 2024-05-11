@@ -90,9 +90,10 @@
             <option value="" disabled selected>Seleccione un tipo de motor</option>
             <option value="V6">V6</option>
             <option value="V8">V8</option>
-            <option value="V10">V20</option>
+            <option value="V10">V10</option>
             <option value="V12">V12</option>  
           </select>
+
 
           <label>Entrada de aire:</label>
           <select id="empuje" name="empuje" required>
@@ -104,9 +105,9 @@
           <label>Cuantos turbos o supercargadores:</label>
           <input type="number" id="cuantos turbos o supercargadores" name="cuantos turbos o supercargadores">
 
-          <button class="boton" onclick="validarConBoton()">Registrar producto</button>
+          <button class="boton" onclick="validarConBoton(); agregarProducto();">Registrar producto</button>
           <button class="boton" onclick="limpiarCampos()">Limpiar Campos</button>
-          
+          <button class="boton" onclick="agregarProducto()">prueba agg</button>
           
         </main>
       </section>

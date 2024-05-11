@@ -179,7 +179,9 @@ function validarInputs() {
     return;
   }
   // Si el registro es válido
+
   alert("El registro se ha completado exitosamente.");
+
   iraproductos();
 }
 
