@@ -603,9 +603,6 @@ const productos = [
 // FUNCION PARA AGREGAR PRODUCTOS
 // Definir la función para agregar el producto
 function agregarProducto() {
-  // Aquí irá tu lógica para agregar el producto al array de productos
-  // Por ejemplo:
-  console.log("entre");
   const nombre = document.getElementById("nombre").value;
   const categoria = document.getElementById("categoria").value;
   const imagen = document.getElementById("imagen").value;
