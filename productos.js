@@ -696,10 +696,5 @@ function irPaginaSiguiente() {
     mostrarProductos(); // Actualizar la visualización de productos
   }
 }
-
-// Agregar event listeners a los botones de navegación
-btnPaginaAnterior.addEventListener("click", irPaginaAnterior);
-btnPaginaSiguiente.addEventListener("click", irPaginaSiguiente);
-
 // Mostrar los productos en la primera carga de la página
 mostrarProductos();
