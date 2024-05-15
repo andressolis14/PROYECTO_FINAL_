@@ -7,7 +7,7 @@ function limpiarCampos() {
   document.getElementById("precio").value = "";
   document.getElementById("motor").selectedIndex = 0;
   document.getElementById("empuje").selectedIndex = 0;
-  document.getElementById("cuantos turbos o supercargadores").value = "";
+  document.getElementById("cuantosTS").value = "";
   alert("Campos limpios.");
 }
 
@@ -30,7 +30,10 @@ function volverPprincipal() {
   window.location.assign("index.html");
 }
 function iraproductos() {
-  window.location.assign("productos.html");
+  console.log("me fui");
+  const contenedor = document.getElementById("enlacepro");
+  contenedor.innerHTML = '<a href="./productos.html">rty</a>';
+  console.log("sali?");
 }
 
 //FUNCIONES PARA LA VALIDACION DEL FORMULARIO
@@ -124,9 +127,7 @@ function validarInputs() {
   const precioInput = document.getElementById("precio").value;
   const tipoMotorInput = document.getElementById("motor").value;
   const entradaAireInput = document.getElementById("empuje").value;
-  const cantidadTurbosInput = document.getElementById(
-    "cuantos turbos o supercargadores",
-  ).value;
+  const cantidadTurbosInput = document.getElementById("cuantosTS").value;
 
   if (!validarNombre(nombreInput)) {
     alert("Por favor, ingresa un nombre válido.");

@@ -601,8 +601,10 @@ const productos = [
 ];
 
 // FUNCION PARA AGREGAR PRODUCTOS
-// Definir la función para agregar el producto
+// definir la función para agregar el producto
 function agregarProducto() {
+  console.log("entro a la funcion");
+  console.log(productos);
   const nombre = document.getElementById("nombre").value;
   const categoria = document.getElementById("categoria").value;
   const imagen = document.getElementById("imagen").value;
@@ -610,11 +612,9 @@ function agregarProducto() {
   const precio = document.getElementById("precio").value;
   const motor = document.getElementById("motor").value;
   const empuje = document.getElementById("empuje").value;
-  const cantidadTurbos = document.getElementById(
-    "cuantos turbos o supercargadores",
-  ).value;
+  const cantidadTurbos = document.getElementById("cuantosTS").value;
 
-  // Crear un objeto con los datos del producto
+  // crear un objeto con los datos del producto
   const nuevoProducto = {
     nombre: nombre,
     categoria: categoria,
@@ -626,9 +626,10 @@ function agregarProducto() {
     cantidad: cantidadTurbos,
   };
 
-  // Agregar el nuevo producto al array de productos
-
+  console.log(nuevoProducto);
+  // agregar el nuevo producto al array de productos
   productos.push(nuevoProducto);
+  console.log(productos);
 }
 
 // Definimos el número de productos que queremos mostrar por página
