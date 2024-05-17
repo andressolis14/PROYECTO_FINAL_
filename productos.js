@@ -700,3 +700,83 @@ function irPaginaSiguiente() {
 }
 // Mostrar los productos en la primera carga de la página
 mostrarProductos();
+
+
+////////////////////////// FILTROS //////////////////////////////////////
+const elementosPorPagina = 10;
+let paginaActualF = 1;
+
+
+function buscarProductos() {
+  const nombre = document.getElementById("filtro-nombre").value.toLowerCase();
+  const categoria = document.getElementById("filtro-categoria").value.toLowerCase();
+  const precio = document.getElementById("filtro-precio").value;
+
+  const resultadosFiltrados = productos.filter(producto => {
+    return (
+      (!nombre || producto.nombre.toLowerCase().includes(nombre)) &&
+      (!categoria || producto.categoria.toLowerCase().includes(categoria)) &&
+      (!precio || producto.precio == precio)
+    );
+  });
+
+  mostrarCargando();
+  setTimeout(() => {
+    mostrarResultados(resultadosFiltrados);
+  }, 2000);
+  console.log(resultadosFiltrados);
+}
+
+function mostrarCargando() {
+  document.getElementById("cargando").style.display = "block";
+  document.getElementById("resultados").style.display = "none";
+}
+
+function mostrarResultados(resultados) {
+  document.getElementById("cargando").style.display = "none";
+  document.getElementById("resultados").style.display = "table";
+
+  const tbody = document.getElementById("resultados").getElementsByTagName("tbody")[0];
+  tbody.innerHTML = "";
+  
+  const inicio = (paginaActualF - 1) * elementosPorPagina;
+  const fin = inicio + elementosPorPagina;
+  const paginaResultados = resultados.slice(inicio, fin);
+
+  for (const producto of paginaResultados) {
+    const fila = document.createElement("tr");
+    fila.innerHTML = `
+      <td>${producto.nombre}</td>
+      <td><img src="${producto.imagen}" alt="${producto.nombre}" width="50"></td>
+      <td>${producto.categoria}</td>
+      <td>${producto.precio}</td>
+      <td>${producto.tipo_motor}</td>
+      <td>${producto.entrada_aire}</td>
+    `;
+    tbody.appendChild(fila);
+  }
+}
+
+function limpiarFiltros() {
+  document.getElementById("filtro-nombre").value = "";
+  document.getElementById("filtro-categoria").value = "";
+  document.getElementById("filtro-precio").value = "";
+  paginaActualF = 1; // Reiniciar a la primera página al limpiar filtros
+  buscarProductos();
+}
+
+function paginaAnterior() {
+  if (paginaActualF > 1) {
+    paginaActualF--;
+    buscarProductos();
+  }
+}
+
+function paginaSiguiente() {
+  paginaActualF++;
+  buscarProductos();
+}
+
+function regresar() {
+  // Aquí iría la lógica para regresar a la vista principal.
+}

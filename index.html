@@ -1,125 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SpeedXpert Registro</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class = "contenedor">
 
-      <header class = "caja c1">
-        <div class="imagen_logo">
-          <img src="imagenes/Modern Automotive Logo (1).png" />
-        </div>
-         <p class="texto-centrado">SpeedXpert</p>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SpeedXpert Registro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <article class = "caja c2"> 
-        <p><strong>SpeedXpert</strong></p>
-        
-        <p>
-          Le damos la bienvenida a nuestro servicio de registro </br> 
-          de vehículos para su eventual venta.</br> 
-          Nos complace ofrecerle la oportunidad de listar su </br>
-          vehículo con nosotros. Le pedimos que por favor </br>
-          complete el formulario a continuación con la mayor </br>
-          precisión posible, siguiendo las instrucciones proporcionadas. </br>
-          Este proceso nos permitirá recopilar la información necesaria </br>
-          para promover eficazmente su vehículo y facilitar un proceso </br>
-          de venta fluido y transparente. Apreciamos su colaboración y </br>
-          confianza en nuestros servicios, y nos comprometemos a brindarle </br>
-          asistencia profesional en todo momento. Estamos a su disposición </br>
-          para cualquier pregunta o aclaración que pueda surgir durante </br>
-          este proceso. ¡Gracias por elegirnos como su plataforma para </br>
-          la venta de su vehículo!
-        </p>
+<body>
+  <div class="contenedor">
 
-        
-        <div class="imagen_tresA">
-          <img src="https://1000marcas.net/wp-content/uploads/2021/11/Los-50-autos-mas-caros-del-mundo.png" />
-        </div>
+    <header class="caja c1">
+      <div class="imagen_logo">
+        <img src="imagenes/Modern Automotive Logo (1).png" />
+      </div>
+      <p class="texto-centrado">SpeedXpert</p>
+    </header>
 
-      </article>
+    <article class="caja c2">
+      <p><strong>SpeedXpert</strong></p>
 
-      <section class = "caja c3">
-        
-        <h3>Formulario de Registro</h3>
+      <p>
+        Le damos la bienvenida a nuestro servicio de registro </br>
+        de vehículos para su eventual venta.</br>
+        Nos complace ofrecerle la oportunidad de listar su </br>
+        vehículo con nosotros. Le pedimos que por favor </br>
+        complete el formulario a continuación con la mayor </br>
+        precisión posible, siguiendo las instrucciones proporcionadas. </br>
+        Este proceso nos permitirá recopilar la información necesaria </br>
+        para promover eficazmente su vehículo y facilitar un proceso </br>
+        de venta fluido y transparente. Apreciamos su colaboración y </br>
+        confianza en nuestros servicios, y nos comprometemos a brindarle </br>
+        asistencia profesional en todo momento. Estamos a su disposición </br>
+        para cualquier pregunta o aclaración que pueda surgir durante </br>
+        este proceso. ¡Gracias por elegirnos como su plataforma para </br>
+        la venta de su vehículo!
+      </p>
 
-        <main id="registroForm" class="registroForm">
-          <label>Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
 
-          <label>Categoria:</label>
-          <select id="categoria" name="categoria" required>
-            <option value="" disabled selected>Seleccione una categoria</option>
-            <option value="cupe">Cupe</option>
-            <option value="descapotable">Descapotable</option>
-            <option value="deportivo">Depotivo</option>
-            <option value="todoterreno">Todoterreno</option>
-            <option value="suv">Suv</option>
-          </select>
+      <div class="imagen_tresA">
+        <img src="https://1000marcas.net/wp-content/uploads/2021/11/Los-50-autos-mas-caros-del-mundo.png" />
+      </div>
 
-          <label>Imagen:</label>
-          <select id="imagen" name="imagen" required>
-             <option value="" disabled selected>Seleccione una imagen</option>
-             <option value="imagenes/audi.PNG">Imagen 1</option>
-             <option value="imagenes/BMW-M4-COMPETITION.jpg">Imagen 2</option>
-             <option value="imagenes/esca.PNG">Imagen 3</option>
-             <option value="imagenes/ford.PNG">Imagen 4</option>
-             <option value="imagenes/ford-mustang.jpg">Imagen 5</option>
-             <option value="imagenes/gtr.jpg">Imagen 6</option>
-             <option value="imagenes/mclarenp1.jpg">Imagen 7</option>
-             <option value="imagenes/nissan.jpg">Imagen 8</option>
-             <option value="imagenes/toyota.jpg">Imagen 9</option>
-             <option value="imagenes/pagani.jpg">Imagen 10</option>
-             <option value="imagenes/renault.jpg">Imagen 11</option>
-          </select>
-          <div id="imagenSeleccionada" class="imagen-container"></div>
+    </article>
 
-          <label>Codigo de producto:</label>
-          <input type="text" id="codigo" name="codigo" required>
+    <section class="caja c3">
 
-          <label>Precio:</label>
-          <input type="text" id="precio" name="precio" required pattern="[0-9]+" placeholder="$">
+      <h3>Formulario de Registro</h3>
 
-          <label>Tipo de Motor:</label>
-          <select id="motor" name="motor" required>
-            <option value="" disabled selected>Seleccione un tipo de motor</option>
-            <option value="V6">V6</option>
-            <option value="V8">V8</option>
-            <option value="V10">V10</option>
-            <option value="V12">V12</option>  
-          </select>
+      <main id="registroForm" class="registroForm">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-          <label>Entrada de aire:</label>
-          <select id="empuje" name="empuje" required>
-            <option value="" disabled selected>Seleccione una entrada de aire</option>
-            <option value="Turbo">Turbo</option>
-            <option value="Supercargador">Supercargador</option>
-          </select>
-          
+        <label>Categoria:</label>
+        <select id="categoria" name="categoria" required>
+          <option value="" disabled selected>Seleccione una categoria</option>
+          <option value="cupe">Cupe</option>
+          <option value="descapotable">Descapotable</option>
+          <option value="deportivo">Depotivo</option>
+          <option value="todoterreno">Todoterreno</option>
+          <option value="suv">Suv</option>
+        </select>
 
-          <label>Cuantos turbos o supercargadores:</label>
-          <input type="number" id="cuantosTS" name="cuantosTS">
+        <label>Imagen:</label>
+        <select id="imagen" name="imagen" required>
+          <option value="" disabled selected>Seleccione una imagen</option>
+          <option value="imagenes/audi.PNG">Imagen 1</option>
+          <option value="imagenes/BMW-M4-COMPETITION.jpg">Imagen 2</option>
+          <option value="imagenes/esca.PNG">Imagen 3</option>
+          <option value="imagenes/ford.PNG">Imagen 4</option>
+          <option value="imagenes/ford-mustang.jpg">Imagen 5</option>
+          <option value="imagenes/gtr.jpg">Imagen 6</option>
+          <option value="imagenes/mclarenp1.jpg">Imagen 7</option>
+          <option value="imagenes/nissan.jpg">Imagen 8</option>
+          <option value="imagenes/toyota.jpg">Imagen 9</option>
+          <option value="imagenes/pagani.jpg">Imagen 10</option>
+          <option value="imagenes/renault.jpg">Imagen 11</option>
+        </select>
+        <div id="imagenSeleccionada" class="imagen-container"></div>
 
-          <button class="boton" onclick="validarConBoton()">Registrar producto</button>
-          <button class="boton" onclick="limpiarCampos()">Limpiar Campos</button>
-          <button class="boton" onclick="agregarProducto(); navegarproductos();">prueba agg</button>
-          <div id="enlacepro"></div>
-          
+        <label>Codigo de producto:</label>
+        <input type="text" id="codigo" name="codigo" required>
 
-        </main>
-      </section>
+        <label>Precio:</label>
+        <input type="text" id="precio" name="precio" required pattern="[0-9]+" placeholder="$">
 
-      <footer class = "caja c4">
-        <p>Copyright © 2024 Company SpeedXpert | Designed by Andres Solis.</p>
-      </footer>
-      
-    </div>
-    <script src="script.js" type="text/javascript"></script>
-    <script src="productos.js" type="text/javascript"></script>
-  </body>
+        <label>Tipo de Motor:</label>
+        <select id="motor" name="motor" required>
+          <option value="" disabled selected>Seleccione un tipo de motor</option>
+          <option value="V6">V6</option>
+          <option value="V8">V8</option>
+          <option value="V10">V10</option>
+          <option value="V12">V12</option>
+        </select>
+
+        <label>Entrada de aire:</label>
+        <select id="empuje" name="empuje" required>
+          <option value="" disabled selected>Seleccione una entrada de aire</option>
+          <option value="Turbo">Turbo</option>
+          <option value="Supercargador">Supercargador</option>
+        </select>
+
+
+        <label>Cuantos turbos o supercargadores:</label>
+        <input type="number" id="cuantosTS" name="cuantosTS">
+
+        <button class="boton" onclick="validarConBoton()">Registrar producto</button>
+        <button class="boton" onclick="limpiarCampos()">Limpiar Campos</button>
+        <button class="boton" onclick="agregarProducto(); navegarproductos();">prueba agg</button>
+        <div id="enlacepro"></div>
+
+
+      </main>
+    </section>
+
+    <footer class="caja c4">
+      <p>Copyright © 2024 Company SpeedXpert | Designed by Andres Solis.</p>
+    </footer>
+
+  </div>
+  <script src="script.js" type="text/javascript"></script>
+  <script src="productos.js" type="text/javascript"></script>
+</body>
+
 </html>

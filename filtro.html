@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador de productos</title>
+    <link rel="stylesheet" href="styles_filtro.css" />
 </head>
+
 <body>
-    
+    <div class="buscador">
+        <input type="text" id="filtro-nombre" placeholder="Nombre del producto">
+        <input type="text" id="filtro-categoria" placeholder="Categoría">
+        <input type="text" id="filtro-precio" placeholder="Precio">
+        <button onclick="buscarProductos()">Buscar</button>
+        <button onclick="limpiarFiltros()">Limpiar</button>
+    </div>
+
+    <div id="cargando" style="display: none;">Cargando...</div>
+
+    <table id="resultados">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Imagen</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Tipo de motor</th>
+                <th>Entrada de aire</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los resultados de la búsqueda se insertarán aquí -->
+        </tbody>
+    </table>
+
+    <button onclick="paginaAnterior()">Página Anterior</button>
+    <button onclick="paginaSiguiente()">Página Siguiente</button>
+    <button onclick="regresar()">Regresar</button>
+
+    <script src="productos.js" type="text/javascript"></script>
 </body>
+
 </html>
