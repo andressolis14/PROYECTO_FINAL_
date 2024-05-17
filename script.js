@@ -29,6 +29,9 @@ function redireccionamientoAI() {
 function volverPprincipal() {
   window.location.assign("index.html");
 }
+function navegarproductos() {
+  window.location.assign("productos.html");
+}
 function iraproductos() {
   console.log("me fui");
   const contenedor = document.getElementById("enlacepro");

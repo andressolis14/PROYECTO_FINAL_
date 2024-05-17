@@ -599,6 +599,8 @@ const productos = [
     cantidad: 2,
   },
 ];
+console.log("productos");
+console.log(productos);
 
 // FUNCION PARA AGREGAR PRODUCTOS
 // definir la función para agregar el producto
