@@ -9,35 +9,51 @@
 </head>
 
 <body>
-    <div class="buscador">
-        <input type="text" id="filtro-nombre" placeholder="Nombre del producto">
-        <input type="text" id="filtro-categoria" placeholder="Categoría">
-        <input type="text" id="filtro-precio" placeholder="Precio">
-        <button onclick="buscarProductos()">Buscar</button>
-        <button onclick="limpiarFiltros()">Limpiar</button>
-    </div>
-
-    <div id="cargando" style="display: none;">Cargando...</div>
-
-    <table id="resultados">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Imagen</th>
-                <th>Categoría</th>
-                <th>Precio</th>
-                <th>Tipo de motor</th>
-                <th>Entrada de aire</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Los resultados de la búsqueda se insertarán aquí -->
-        </tbody>
-    </table>
-
-    <button onclick="paginaAnterior()">Página Anterior</button>
-    <button onclick="paginaSiguiente()">Página Siguiente</button>
-    <button onclick="regresar()">Regresar</button>
+    <header>
+        <h1>Buscador de Productos</h1>
+    </header>
+    <main>
+        <section id="filtros">
+            <select id="filtro1">
+                <option value="">Tipo de motor</option>
+                <option value="v6">v6</option>
+                <option value="v8">v8</option>
+                <option value="v10">v10</option>
+                <option value="v12">v12</option>
+            </select>
+            <select id="filtro2">
+                <option value="">Categoria</option>
+                <option value="Deportivo">Deportivo</option>
+                <option value="Descapotable">Descapotable</option>
+                <option value="Suv">SUV</option>
+                <option value="Todoterreno">Todoterreno</option>
+            </select>
+            <select id="filtro3">
+                <option value="">Entrada de aire </option>
+                <option value="turbo">Turbo</option>
+                <option value="supercargador">Supercargador</option>
+                
+            </select>
+            <button id="botonBuscar" onclick="aplicarFiltros()">Buscar</button>
+            <button id="botonLimpiar" onclick="limpiarFiltros()">Limpiar</button>
+        </section>
+        <section id="resultados">
+            <div id="cargando" class="cargando">Cargando...</div>
+            <table id="tablaResultados">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                        <th>Tipo de Motor</th>
+                        <th>Entrada de Aire</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
 
     <script src="productos.js" type="text/javascript"></script>
 </body>

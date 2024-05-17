@@ -1,32 +1,51 @@
 body {
     font-family: Arial, sans-serif;
-  }
-  
-  .buscador {
-    margin-bottom: 20px;
-  }
-  
-  .buscador input {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#filtros input, #filtros select {
     margin-right: 10px;
-  }
-  
-  table {
+    margin-bottom: 10px;
+}
+
+#resultados {
+    margin-top: 20px;
+}
+
+#cargando {
+    display: none;
+    font-style: italic;
+    color: #666;
+}
+
+#tablaResultados {
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  th, td {
+}
+
+#tablaResultados th, #tablaResultados td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
-  }
-  
-  th {
+}
+
+#tablaResultados th {
     background-color: #f2f2f2;
-  }
-  
-  button {
-    margin-top: 10px;
-    padding: 10px 20px;
-  }
+}
+#filtros {
+    margin: 0 auto; 
+    max-width: 500px; 
+}
   

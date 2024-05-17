@@ -38,6 +38,9 @@ function iraproductos() {
   contenedor.innerHTML = '<a href="./productos.html">rty</a>';
   console.log("sali?");
 }
+function irabuscar(){
+  window.location.assign("filtro.html");
+}
 
 //FUNCIONES PARA LA VALIDACION DEL FORMULARIO
 

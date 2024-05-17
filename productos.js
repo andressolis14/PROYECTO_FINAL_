@@ -703,80 +703,57 @@ mostrarProductos();
 
 
 ////////////////////////// FILTROS //////////////////////////////////////
-const elementosPorPagina = 10;
-let paginaActualF = 1;
-
-
-function buscarProductos() {
-  const nombre = document.getElementById("filtro-nombre").value.toLowerCase();
-  const categoria = document.getElementById("filtro-categoria").value.toLowerCase();
-  const precio = document.getElementById("filtro-precio").value;
-
-  const resultadosFiltrados = productos.filter(producto => {
-    return (
-      (!nombre || producto.nombre.toLowerCase().includes(nombre)) &&
-      (!categoria || producto.categoria.toLowerCase().includes(categoria)) &&
-      (!precio || producto.precio == precio)
-    );
-  });
-
-  mostrarCargando();
-  setTimeout(() => {
-    mostrarResultados(resultadosFiltrados);
-  }, 2000);
-  console.log(resultadosFiltrados);
-}
-
-function mostrarCargando() {
-  document.getElementById("cargando").style.display = "block";
-  document.getElementById("resultados").style.display = "none";
-}
-
-function mostrarResultados(resultados) {
-  document.getElementById("cargando").style.display = "none";
-  document.getElementById("resultados").style.display = "table";
-
-  const tbody = document.getElementById("resultados").getElementsByTagName("tbody")[0];
-  tbody.innerHTML = "";
+function aplicarFiltros() {
+  const cargandoDiv = document.getElementById('cargando');
+  const resultadosSeccion = document.getElementById('resultados');
+  const tablaResultados = document.getElementById('tablaResultados');
   
-  const inicio = (paginaActualF - 1) * elementosPorPagina;
-  const fin = inicio + elementosPorPagina;
-  const paginaResultados = resultados.slice(inicio, fin);
+  
+  cargandoDiv.style.display = 'block';
+  
+  resultadosSeccion.style.display = 'none';
+  
+  setTimeout(() => {
+      const filtro1 = document.getElementById('filtro1').value;
+      const filtro2 = document.getElementById('filtro2').value;
+      const filtro3 = document.getElementById('filtro3').value;
 
-  for (const producto of paginaResultados) {
-    const fila = document.createElement("tr");
-    fila.innerHTML = `
-      <td>${producto.nombre}</td>
-      <td><img src="${producto.imagen}" alt="${producto.nombre}" width="50"></td>
-      <td>${producto.categoria}</td>
-      <td>${producto.precio}</td>
-      <td>${producto.tipo_motor}</td>
-      <td>${producto.entrada_aire}</td>
-    `;
-    tbody.appendChild(fila);
-  }
+      const productosFiltrados = productos.filter(producto => {
+          return (
+              (filtro1 === '' || producto.tipo_motor=== filtro1) &&
+              (filtro2 === '' || producto.categoria === filtro2) &&
+              (filtro3 === '' || producto.entrada_aire === filtro3)
+          );
+      });
+
+      mostrarResultados(productosFiltrados);
+      cargandoDiv.style.display = 'none';
+      resultadosSeccion.style.display = 'block';
+  }, 2000);
 }
 
 function limpiarFiltros() {
-  document.getElementById("filtro-nombre").value = "";
-  document.getElementById("filtro-categoria").value = "";
-  document.getElementById("filtro-precio").value = "";
-  paginaActualF = 1; // Reiniciar a la primera página al limpiar filtros
-  buscarProductos();
+  document.getElementById('filtro1').value = '';
+  document.getElementById('filtro2').value = '';
+  document.getElementById('filtro3').value = '';
+  document.getElementById('tablaResultados').querySelector('tbody').innerHTML = '';
+  document.getElementById('resultados').style.display = 'none';
 }
 
-function paginaAnterior() {
-  if (paginaActualF > 1) {
-    paginaActualF--;
-    buscarProductos();
-  }
-}
+function mostrarResultados(productos) {
+  const tbody = document.getElementById('tablaResultados').querySelector('tbody');
+  tbody.innerHTML = '';
 
-function paginaSiguiente() {
-  paginaActualF++;
-  buscarProductos();
-}
-
-function regresar() {
-  // Aquí iría la lógica para regresar a la vista principal.
+  productos.forEach(producto => {
+      const fila = document.createElement('tr');
+      fila.innerHTML = `
+          <td>${producto.nombre}</td>
+          <td><img src="${producto.imagen}" alt="${producto.nombre}" width="100"></td>
+          <td>${producto.categoria}</td>
+          <td>${producto.precio}</td>
+          <td>${producto.tipo_motor}</td>
+          <td>${producto.entrada_aire}</td>
+      `;
+      tbody.appendChild(fila);
+  });
 }
