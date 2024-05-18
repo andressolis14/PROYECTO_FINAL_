@@ -21,13 +21,15 @@ main {
 }
 
 #resultados {
+    display: none;
     margin-top: 20px;
 }
 
-#cargando {
+.cargando {
     display: none;
     font-style: italic;
     color: #666;
+    background-color: green;
 }
 
 #tablaResultados {

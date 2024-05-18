@@ -704,16 +704,20 @@ mostrarProductos();
 
 ////////////////////////// FILTROS //////////////////////////////////////
 function aplicarFiltros() {
+  
   const cargandoDiv = document.getElementById('cargando');
   const resultadosSeccion = document.getElementById('resultados');
   const tablaResultados = document.getElementById('tablaResultados');
+  console.log('Aplicar filtros');
   
   
   cargandoDiv.style.display = 'block';
-  
+  console.log(cargandoDiv);
   resultadosSeccion.style.display = 'none';
+  console.log(cargandoDiv);
   
   setTimeout(() => {
+    
       const filtro1 = document.getElementById('filtro1').value;
       const filtro2 = document.getElementById('filtro2').value;
       const filtro3 = document.getElementById('filtro3').value;
