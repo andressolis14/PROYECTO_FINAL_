@@ -703,18 +703,16 @@ mostrarProductos();
 
 
 ////////////////////////// FILTROS //////////////////////////////////////
+
 function aplicarFiltros() {
   
   const cargandoDiv = document.getElementById('cargando');
   const resultadosSeccion = document.getElementById('resultados');
-  const tablaResultados = document.getElementById('tablaResultados');
-  console.log('Aplicar filtros');
   
   
   cargandoDiv.style.display = 'block';
-  console.log(cargandoDiv);
   resultadosSeccion.style.display = 'none';
-  console.log(cargandoDiv);
+  
   
   setTimeout(() => {
     
@@ -741,7 +739,7 @@ function limpiarFiltros() {
   document.getElementById('filtro2').value = '';
   document.getElementById('filtro3').value = '';
   document.getElementById('tablaResultados').querySelector('tbody').innerHTML = '';
-  document.getElementById('resultados').style.display = 'none';
+  
 }
 
 function mostrarResultados(productos) {
