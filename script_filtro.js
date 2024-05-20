@@ -54,38 +54,38 @@ function mostrarPagina(pagina) {  // Función que muestra la página actual
       celdaEntradaAire.innerText = producto.entrada_aire; // Asigna la entrada de aire del producto a la celda
     });
 
-    actualizarPaginacion();
+    actualizarPaginacion(); // Actualiza la paginación
   }, 2000);
 }
 
-function actualizarPaginacion() {
-  document.getElementById('paginaActualF').innerText = paginaActualF;
-  document.getElementById('btnPaginaAnteriorF').disabled = paginaActualF === 1;
-  document.getElementById('btnPaginaSiguienteF').disabled = paginaActualF * productosPorPaginaF >= productosFiltrados.length;
+function actualizarPaginacion() {  // Función que actualiza la paginación
+  document.getElementById('paginaActualF').innerText = paginaActualF; // Actualiza el número de página actual
+  document.getElementById('btnPaginaAnteriorF').disabled = paginaActualF === 1; // Habilita o deshabilita el botón de página anterior
+  document.getElementById('btnPaginaSiguienteF').disabled = paginaActualF * productosPorPaginaF >= productosFiltrados.length; // Habilita o deshabilita el botón de página siguiente
 }
 
-function irPaginaAnteriorF() {
+function irPaginaAnteriorF() {  // Función que va a la página anterior
   if (paginaActualF > 1) {
-    paginaActualF--;
-    mostrarPagina(paginaActualF);
+    paginaActualF--;  // Decrementa el número de página actual
+    mostrarPagina(paginaActualF); // Muestra la página actual
   }
 }
 
-function irPaginaSiguienteF() {
+function irPaginaSiguienteF() { // Función que va a la página siguiente
   if (paginaActualF * productosPorPaginaF < productosFiltrados.length) {
-    paginaActualF++;
-    mostrarPagina(paginaActualF);
+    paginaActualF++;  // Incrementa el número de página actual
+    mostrarPagina(paginaActualF); // Muestra la página actual
   }
 }
 
 function limpiarFiltros() {
-  document.getElementById('filtro1').value = '';
-  document.getElementById('filtro2').value = '';
-  document.getElementById('filtro3').value = '';
-  document.getElementById('tablaResultados').getElementsByTagName('tbody')[0].innerHTML = '';
-  productosFiltrados = [];
-  paginaActualF = 1;
-  actualizarPaginacion();
+  document.getElementById('filtro1').value = ''; // Restablece el valor del filtro 1
+  document.getElementById('filtro2').value = ''; // Restablece el valor del filtro 2
+  document.getElementById('filtro3').value = ''; // Restablece el valor del filtro 3
+  document.getElementById('tablaResultados').getElementsByTagName('tbody')[0].innerHTML = ''; // Borra los resultados de la tabla
+  productosFiltrados = []; // Borra los productos filtrados
+  paginaActualF = 1;  // Reinicia la página actual
+  actualizarPaginacion();  // Actualiza la paginación
 }
 
 
