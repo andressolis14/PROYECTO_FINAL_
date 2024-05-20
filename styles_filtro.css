@@ -90,3 +90,6 @@ main {
 .boton:hover {
     color: rgb(255, 255, 255);
 }
+.paginacion{
+    text-align: center;
+}
