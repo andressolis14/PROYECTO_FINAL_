@@ -11,9 +11,7 @@ function limpiarCampos() {
   alert("Campos limpios.");
 }
 
-// Esta línea obtiene una referencia al elemento <select> del HTML con el id "imagen" y la almacena en la variable selectImagen.
 const selectImagen = document.getElementById("imagen");
-// Aquí se obtiene una referencia al elemento <div> del HTML con el id "imagenSeleccionada" y se almacena en la variable imagenSeleccionadaDiv.
 const imagenSeleccionadaDiv = document.getElementById("imagenSeleccionada");
 
 // para mostrar la imagen seleccionada en div imagenSeleccionada
