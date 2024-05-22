@@ -38,7 +38,7 @@ function iraproductos() {
   contenedor.innerHTML = '<a href="./productos.html">rty</a>';
   console.log("sali?");
 }
-function irabuscar(){
+function irabuscar() {
   window.location.assign("filtro.html"); // Redirige al usuario a la página "filtro.html"
 }
 
@@ -146,7 +146,7 @@ function validarInputs() {
   }
 
   // Validar la categoría
-  if (!validarCategoria(categoriaInput)) { 
+  if (!validarCategoria(categoriaInput)) {
     alert("Por favor, selecciona una categoría."); // Mostrar alerta si la categoría no es válida
     redireccionamientoAI(); // Llamar a la función de redireccionamiento
     return; // Salir de la función
@@ -189,7 +189,7 @@ function validarInputs() {
     redireccionamientoAI(); // Llamar a la función de redireccionamiento
     return; // Salir de la función
   }
-  
+
   // Si todas las validaciones pasan, mostrar mensaje de éxito
   alert("El registro se ha completado exitosamente.");
   // Redireccionar a la página de productos

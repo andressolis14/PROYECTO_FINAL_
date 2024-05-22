@@ -1,17 +1,21 @@
 body {
   background-color: black;
 }
+
 .contenedorin {
   background-color: #ffffff;
   padding: 10px;
 }
+
 .img_indi {
   display: flex;
   flex-direction: row;
 }
+
 h3 {
   color: red;
 }
+
 h2 {
   color: red;
 }
@@ -26,9 +30,11 @@ h2 {
   max-height: 200px;
   transition: transform 1s ease;
 }
+
 .imagen_A img:hover {
   transform: scale(1.5);
 }
+
 .boton {
   background-color: transparent;
   border: none;

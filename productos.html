@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SpeedXpert Productos</title>
-    <link rel="stylesheet" href="styles_productos.css" />
-  </head>
-  <body>
-    <div class="contenedorpro">
-      <header class="hed">
-        <img src="imagenes/carretera.png" alt="Imagen">
-        <p class="titulo"><strong>SpeedXpert</strong></p>
-      </header>
 
-      <div class="contenedor-gif-main">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SpeedXpert Productos</title>
+  <link rel="stylesheet" href="styles_productos.css" />
+</head>
 
-        <main class="contproduc" id="contproduc">
-        </main>
+<body>
+  <div class="contenedorpro">
+    <header class="hed">
+      <img src="imagenes/carretera.png" alt="Imagen">
+      <p class="titulo"><strong>SpeedXpert</strong></p>
+    </header>
 
-        <aside class="gif-container">
-          <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajBkYXFnY2VweGNqamtjOTNnc3M0bjAwcmI4Ynp6eWFhdW80ZGNqZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HPXmHjGqCQCg8/giphy.gif" alt="GIF">
-          <video autoplay controls>
-            <source src="videos/video.mp4" type="video/mp4">
-          </video>
-          <img src="https://media.giphy.com/media/kPli0xjWvvtn2/giphy.gif" alt="GIF">
-        </aside>
-        
-      </div>
+    <div class="contenedor-gif-main">
 
-      <div class="botoNave">
-          <button class="boton" id="btnPaginaAnterior" onclick="irPaginaAnterior()"> <<< </button>
+      <main class="contproduc" id="contproduc">
+      </main>
+
+      <aside class="gif-container">
+        <img
+          src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajBkYXFnY2VweGNqamtjOTNnc3M0bjAwcmI4Ynp6eWFhdW80ZGNqZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HPXmHjGqCQCg8/giphy.gif"
+          alt="GIF">
+        <video autoplay controls>
+          <source src="videos/video.mp4" type="video/mp4">
+        </video>
+        <img src="https://media.giphy.com/media/kPli0xjWvvtn2/giphy.gif" alt="GIF">
+      </aside>
+
+    </div>
+
+    <div class="botoNave">
+      <button class="boton" id="btnPaginaAnterior" onclick="irPaginaAnterior()">
+        <<< </button>
           <span class="paginaActual">Página: <span id="paginaActual" class="paginaActual">1</span></span>
           <button class="boton" id="btnPaginaSiguiente" onclick="irPaginaSiguiente()"> >>> </button>
-      </div>
-
-      <nav class="contnav">
-          <button class="boton" onclick="volverPprincipal()"> Registrar otro producto</button>
-          <button class="boton" onclick="irabuscar()"> Buscar producto </button>
-      </nav>
-
-      <footer class="fopro">
-            <p>Copyright © 2024 Company SpeedXpert | Designed by Andres Solis.</p>
-      </footer>
     </div>
-    <script src="script.js" type="text/javascript"></script>
-    <script src="productos.js" type="text/javascript"></script>
-  </body>
-</html>
 
+    <nav class="contnav">
+      <button class="boton" onclick="volverPprincipal()"> Registrar otro producto</button>
+      <button class="boton" onclick="irabuscar()"> Buscar producto </button>
+    </nav>
+
+    <footer class="fopro">
+      <p>Copyright © 2024 Company SpeedXpert | Designed by Andres Solis.</p>
+    </footer>
+  </div>
+  <script src="script.js" type="text/javascript"></script>
+  <script src="productos.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -628,10 +628,10 @@ function agregarProducto() {
     cantidad: cantidadTurbos, // Asigna el valor del campo de texto "cuantosTS" al atributo "cantidad" del objeto
   };
 
-  console.log(nuevoProducto); 
+  console.log(nuevoProducto);
   // Agregar el nuevo producto al array de productos
   productos.push(nuevoProducto); // Agrega el objeto "nuevoProducto" al array de productos
-  console.log(productos); 
+  console.log(productos);
 }
 
 // Definimos el número de productos que queremos mostrar por página
