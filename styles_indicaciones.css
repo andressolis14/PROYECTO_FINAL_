@@ -16,8 +16,9 @@ h3 {
   color: red;
 }
 
-h2 {
+.contenedorin h2 {
   color: red;
+  text-align: center;
 }
 
 .imagen_A {
