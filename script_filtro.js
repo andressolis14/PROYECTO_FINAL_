@@ -1,4 +1,3 @@
-
 let productosFiltrados = []; // Array que almacena los productos filtrados
 let paginaActualF = 1; // Número de página actual
 const productosPorPaginaF = 10;  // Número de productos por página
@@ -18,14 +17,23 @@ function aplicarFiltros() { // Función que aplica los filtros a los productos
   mostrarPagina(paginaActualF); // Muestra la página actual
 }
 
+function esperar(ms) {
+  return new Promise((resolve, reject) => {
+    if (ms <= 0) {
+      reject("Tiempo de espera inválido");
+    } else {
+      setTimeout(resolve, ms);
+    }
+  });
+}
+
 function mostrarPagina(pagina) {  // Función que muestra la página actual
   const tablaResultados = document.getElementById('tablaResultados').getElementsByTagName('tbody')[0]; // Obtiene la tabla de resultados
   tablaResultados.innerHTML = ''; // Borra los resultados anteriores
 
-
   document.getElementById('cargando').style.display = 'block';  // Muestra el mensaje de "Cargando (gif)"
 
-  setTimeout(() => { // Espera 2 segundos antes de mostrar los resultados
+  esperar(2000).then(() => { // Espera 2 segundos antes de mostrar los resultados
     document.getElementById('cargando').style.display = 'none'; // Oculta el mensaje de "Cargando (gif)"
 
     const inicio = (pagina - 1) * productosPorPaginaF;  // Calcula el índice de inicio de la página actual
@@ -55,7 +63,9 @@ function mostrarPagina(pagina) {  // Función que muestra la página actual
     });
 
     actualizarPaginacion(); // Actualiza la paginación
-  }, 2000);
+  }).catch(error => {
+    console.error('Error al esperar:', error);
+  });
 }
 
 function actualizarPaginacion() {  // Función que actualiza la paginación
@@ -87,5 +97,7 @@ function limpiarFiltros() {
   paginaActualF = 1;  // Reinicia la página actual
   actualizarPaginacion();  // Actualiza la paginación
 }
+
+
 
 
