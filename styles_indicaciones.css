@@ -2,13 +2,14 @@ body {
   background-color: black;
 }
 
-header{
+header {
   background-color: #ffffff;
   text-align: center;
   padding: 10px;
   font-size: 20px;
 }
-header h1{
+
+header h1 {
   background: linear-gradient(to right,
       red 20%,
       rgb(185, 111, 111) 40%,
@@ -21,34 +22,40 @@ header h1{
   background-clip: text;
   animation: shine 6s linear infinite;
 }
+
 @keyframes shine {
   to {
     background-position: 200% center;
   }
 }
-main{
+
+main {
   background-color: white;
   padding: 5px;
   font-size: 20px;
-  
+
 }
-.acer{
+
+.acer {
   text-align: center;
 }
+
 .img_indi {
   display: flex;
   flex-direction: row;
-  
+
 }
 
-figure img{
+figure img {
   max-width: 100%;
   max-height: 200px;
   transition: transform 1s ease;
 }
-figure img:hover{
+
+figure img:hover {
   transform: scale(1.5);
 }
+
 .boton {
   background-color: transparent;
   border: none;
@@ -86,5 +93,3 @@ figure img:hover{
 .boton:hover {
   color: rgb(255, 255, 255);
 }
-
-
