@@ -632,7 +632,14 @@ function agregarProducto() {
   // Agregar el nuevo producto al array de productos
   productos.push(nuevoProducto); // Agrega el objeto "nuevoProducto" al array de productos
   console.log(productos);
+  guardarDatos(productos);
 }
+
+function guardarDatos(key, data) {
+  const dataString = JSON.stringify(data)
+  localStorage.setItem(key, dataString);
+}
+
 
 // Definimos el número de productos que queremos mostrar por página
 
