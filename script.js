@@ -193,7 +193,7 @@ function validarInputs() {
   // Si todas las validaciones pasan, mostrar mensaje de éxito
   alert("El registro se ha completado exitosamente.");
   // Redireccionar a la página de productos
-  iraproductos();
+  navegarproductos();
 }
 
 function validarConBoton() {
