@@ -1,3 +1,24 @@
+let productos2 = []; // Array que almacena los productos
+
+const body = document.getElementById("body");
+
+window.addEventListener("load", function () {
+  console.log("cargo pagina");
+  productos2 = obtenerDatos("misDatos");
+  console.log(productos2);
+  
+});
+
+function obtenerDatos(key) {
+  if (localStorage.getItem(key) == "undefined") {
+    return "No hay datos almacenados.";
+  }
+  const dataString = localStorage.getItem(key);
+  return JSON.parse(dataString);
+}
+
+
+
 let productosFiltrados = []; // Array que almacena los productos filtrados
 let paginaActualF = 1; // Número de página actual
 const productosPorPaginaF = 10;  // Número de productos por página
@@ -7,7 +28,7 @@ function aplicarFiltros() { // Función que aplica los filtros a los productos
   const filtro2 = document.getElementById('filtro2').value; // Obtiene el valor del filtro 2
   const filtro3 = document.getElementById('filtro3').value;  // Obtiene el valor del filtro 3
 
-  productosFiltrados = productos.filter(producto => { // Filtra los productos según los filtros aplicados
+  productosFiltrados = productos2.filter(producto => { // Filtra los productos según los filtros aplicados
     return (filtro1 === '' || producto.tipo_motor === filtro1) &&
       (filtro2 === '' || producto.categoria === filtro2) &&
       (filtro3 === '' || producto.entrada_aire === filtro3);

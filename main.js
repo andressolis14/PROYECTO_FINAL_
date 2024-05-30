@@ -5,7 +5,7 @@ window.addEventListener("load", function(){
   console.log("cargo pagina")
   productos2 = obtenerDatos("misDatos")
   console.log(productos2)
-  
+  mostrarProductos();
 })
 
 function obtenerDatos(key) {
@@ -84,4 +84,3 @@ function irPaginaSiguiente() {
     mostrarProductos(); // Actualizar la visualización de productos
   }
 }
-mostrarProductos();
