@@ -64,7 +64,7 @@ const productos = [
     nombre: "Ferrari LaFerrari",
     categoria: "Deportivo",
     imagen:
-      "https://1000marcas.net/wp-content/uploads/2021/11/Ferrari-LaFerrari-Aperta-768x490.png",
+      "https://www.carscoops.com/wp-content/uploads/2024/01/Ferrari-LaFerrari-7-1024x683.jpg",
     codigo: "bC6dE7fG",
     precio: "$140.000.000 ",
     tipo_motor: "v10",
@@ -136,7 +136,7 @@ const productos = [
     nombre: " Ferrari LaFerrari Aperta",
     categoria: "Deportivo",
     imagen:
-      "https://1000marcas.net/wp-content/uploads/2021/11/Ferrari-LaFerrari-Aperta-1-768x490.png",
+      "https://amian-collectioncars.com/wp-content/uploads/2023/09/230110_Ferrari-LaFerrari-15.jpg",
     codigo: "kL9mN0oP",
     precio: "$500.000.000",
     tipo_motor: "v10",
@@ -642,6 +642,5 @@ function guardarDatos(key, data) {
   localStorage.setItem(key, dataString);
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
