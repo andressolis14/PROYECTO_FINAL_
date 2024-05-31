@@ -516,14 +516,14 @@ const productos = [
   },
   {
     id: 44,
-    nombre: "Alfa Romeo Stelvio QV",
-    categoria: "Suv",
+    nombre: "Porsche 911 GT3",
+    categoria: "Deportivo",
     imagen:
-      "https://hips.hearstapps.com/hmg-prod/images/1563693-stelvio-quadrifoglio-my20-03-1588850312.jpg?crop=1xw:0.84375xh;center,top&resize=980:*",
+      "https://img.freepik.com/fotos-premium/precioso-coche-porsche-911-gt3-rs_1032608-2.jpg",
     codigo: "nO0pQ1rS",
     precio: "$400.000.000",
-    tipo_motor: "v6",
-    entrada_aire: "supercargador",
+    tipo_motor: "v8",
+    entrada_aire: "turbor",
     cantidad: 1,
   },
   {
