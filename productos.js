@@ -516,7 +516,7 @@ const productos = [
   },
   {
     id: 44,
-    nombre: "Porsche 911 GT3",
+    nombre: "Porsche 911 GT3 rs",
     categoria: "Deportivo",
     imagen:
       "https://img.freepik.com/fotos-premium/precioso-coche-porsche-911-gt3-rs_1032608-2.jpg",
