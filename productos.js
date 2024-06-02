@@ -625,8 +625,8 @@ function agregarProducto() {
     imagen: imagen, // Asigna el valor del campo de texto "imagen" al atributo "imagen" del objeto
     codigo: codigo, // Asigna el valor del campo de texto "codigo" al atributo "codigo" del objeto
     precio: precio, // Asigna el valor del campo de texto "precio" al atributo "precio" del objeto
-    motor: motor, // Asigna el valor del campo de texto "motor" al atributo "motor" del objeto
-    empuje: empuje, // Asigna el valor del campo de texto "empuje" al atributo "empuje" del objeto
+    tipo_motor: motor, // Asigna el valor del campo de texto "motor" al atributo "motor" del objeto
+    entrada_aire: empuje, // Asigna el valor del campo de texto "empuje" al atributo "empuje" del objeto
     cantidad: cantidadTurbos, // Asigna el valor del campo de texto "cuantosTS" al atributo "cantidad" del objeto
   };
 
@@ -635,6 +635,7 @@ function agregarProducto() {
   productos.push(nuevoProducto); // Agrega el objeto "nuevoProducto" al array de productos
   console.log(productos);
   guardarDatos("misDatos",productos);
+  
 }
 
 function guardarDatos(key, data) {
