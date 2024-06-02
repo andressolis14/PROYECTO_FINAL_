@@ -38,12 +38,12 @@ function aplicarFiltros() { // Función que aplica los filtros a los productos
   mostrarPagina(paginaActualF); // Muestra la página actual
 }
 
-function esperar(ms) {
+function esperar(tiempo) {
   return new Promise((resolve, reject) => {
-    if (ms <= 0) {
+    if (tiempo <= 0) {
       reject("Tiempo de espera inválido");
     } else {
-      setTimeout(resolve, ms);
+      setTimeout(resolve, tiempo);
     }
   });
 }
@@ -108,6 +108,7 @@ function irPaginaSiguienteF() { // Función que va a la página siguiente
     mostrarPagina(paginaActualF); // Muestra la página actual
   }
 }
+
 
 function limpiarFiltros() {
   document.getElementById('filtro1').value = ''; // Restablece el valor del filtro 1

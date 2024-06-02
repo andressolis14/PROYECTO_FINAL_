@@ -24,7 +24,7 @@ const productosPorPagina = 15; // Define el número de productos que se mostrar�
 
 let paginaActual = 1; // Define la página actual
 
-// Obtenemos referencias al contenedor de productos y los botones de navegación
+// Obtenemos referencias al contenedor de productos y los botones de navegación 
 
 const productosContainer = document.getElementById("contproduc"); // Obtiene una referencia al elemento "contproduc" en el HTML
 const btnPaginaAnterior = document.getElementById("btnPaginaAnterior"); // Obtiene una referencia al elemento "btnPaginaAnterior" en el HTML
