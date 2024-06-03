@@ -38,12 +38,12 @@ function aplicarFiltros() { // Función que aplica los filtros a los productos
   mostrarPagina(paginaActualF); // Muestra la página actual
 }
 
-function esperar(tiempo) {
-  return new Promise((resolve, reject) => {
-    if (tiempo <= 0) {
-      reject("Tiempo de espera inválido");
-    } else {
-      setTimeout(resolve, tiempo);
+function esperar(tiempo) { // La función toma un parámetro 'tiempo' que representa la cantidad de tiempo a esperar en milisegundos
+  return new Promise((resolve, reject) => { // Retorna una nueva promesa que toma dos argumentos: 'resolve' para la resolución exitosa y 'reject' para el manejo de errores
+    if (tiempo <= 0) {  // Verifica si el tiempo especificado es menor o igual a cero, lo que indica un tiempo de espera inválido
+      reject("Tiempo de espera inválido"); // Rechaza la promesa con un mensaje indicando que el tiempo de espera es inválido
+    } else { // Si el tiempo es válido
+      setTimeout(resolve, tiempo); // Utiliza la función setTimeout para resolver la promesa después del tiempo especificado
     }
   });
 }
