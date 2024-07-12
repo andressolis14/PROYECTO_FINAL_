@@ -84,3 +84,4 @@ function irPaginaSiguiente() {
     mostrarProductos(); // Actualizar la visualización de productos
   }
 }
+

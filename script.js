@@ -42,6 +42,7 @@ function irabuscar() {
   window.location.assign("filtro.html"); // Redirige al usuario a la página "filtro.html"
 }
 
+
 //FUNCIONES PARA LA VALIDACION DEL FORMULARIO
 
 //para validar el nombre del producto

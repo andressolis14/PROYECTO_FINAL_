@@ -618,6 +618,7 @@ function agregarProducto() {
   const empuje = document.getElementById("empuje").value; // Obtiene el valor del campo de texto "empuje"
   const cantidadTurbos = document.getElementById("cuantosTS").value; // Obtiene el valor del campo de texto "cuantosTS"
 
+  
   // crear un objeto con los datos del producto
   const nuevoProducto = {
     nombre: nombre, // Asigna el valor del campo de texto "nombre" al atributo "nombre" del objeto

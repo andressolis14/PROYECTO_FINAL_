@@ -110,6 +110,7 @@ function irPaginaSiguienteF() { // Función que va a la página siguiente
 }
 
 
+
 function limpiarFiltros() {
   document.getElementById('filtro1').value = ''; // Restablece el valor del filtro 1
   document.getElementById('filtro2').value = ''; // Restablece el valor del filtro 2
